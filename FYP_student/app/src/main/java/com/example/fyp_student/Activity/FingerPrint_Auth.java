@@ -25,7 +25,7 @@ public class FingerPrint_Auth extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finger_print__auth);
         LottieAnimationView fingerprintview = (LottieAnimationView) findViewById(R.id.fingerprintsymbol) ;
-
+String abc;
         BiometricManager biometricManager = BiometricManager.from(this);
         switch (biometricManager.canAuthenticate()) {
             case BiometricManager.BIOMETRIC_SUCCESS:
